@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Complete Responsive Hospital Website Design</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> medcare. </a>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+</header>
+
+<section class="home" id="home">
+    <div class="image">
+        <img src="C:\Users\yatis\OneDrive\Documents\24816.jpg">
+    </div>
+    <div class="content">
+        <h3>Stay Safe, Stay Healthy</h3>
+        <p>Air Quality Solutions for a Brighter Tomorrow</p>
+        <p>Inhale Wellness, Exhale Pollution</p>
+        <a href="#" class="btn">Contact</a>
+    </div>
+</section>
+
+<section class="icons-container">
+    <div class="icons">
+        <i class="fas fa-user-md"></i>
+        <h3>140+</h3>
+        <p>Doctors at Work</p>
+    </div>
+    <div class="icons">
+        <i class="fas fa-users"></i>
+        <h3>1040+</h3>
+        <p>Satisfied Patients</p>
+    </div>
+    <div class="icons">
+        <i class="fas fa-procedures"></i>
+        <h3>500+</h3>
+        <p>Bed Facilities</p>
+    </div>
+    <div class="icons">
+        <i class="fas fa-hospitals"></i>
+        <h3>80+</h3>
+        <p>Available Hospitals</p>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <h1 class="heading">Our <span>Services</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-notes-medical"></i>
+            <h3>Free Checkups</h3>
+            <p>Regular health checkups are essential for early detection of diseases and maintaining overall health. Our experienced medical professionals provide comprehensive checkups free of charge.</p>
+            <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
+        </div>
+        <div class="box">
+            <i class="fas fa-ambulance"></i>
+            <h3>24/7 Ambulance</h3>
+            <p>Our ambulance service operates round the clock to ensure immediate medical assistance in emergencies. Equipped with advanced life-support systems and trained paramedics, we prioritize patient care and safety.</p>
+            <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
+        </div>
+        <div class="box">
+            <i class="fas fa-user-md"></i>
+            <h3>Expert Doctors</h3>
+            <p>Our team consists of highly skilled and experienced doctors specializing in various medical fields. With a commitment to excellence, they provide personalized care and treatment to each patient, ensuring the best possible outcomes.</p>
+            <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
+        </div>
+        <div class="box">
+            <i class="fas fa-pills"></i>
+            <h3>Medicines</h3>
+            <p>We maintain a well-stocked pharmacy with a wide range of medicines, ensuring timely availability of prescribed medications to our patients. Our pharmacists offer guidance and counseling on medication usage and safety.</p>
+            <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
+        </div>
+        <div class="box">
+            <i class="fas fa-procedures"></i>
+            <h3>Bed Facility</h3>
+            <p>We provide comfortable and well-equipped bed facilities for patients requiring hospitalization or recuperation. Our clean and hygienic environment ensures a conducive atmosphere for recovery and rest.</p>
+            <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
+        </div>
+        <div class="box">
+            <i class="fas fa-heartbeat"></i>
+            <h3>Total Care</h3>
+            <p>At Medcare, we are committed to providing comprehensive healthcare services encompassing preventive care, diagnosis, treatment, and rehabilitation. Your well-being is our priority, and we strive to deliver holistic care with compassion and expertise.</p>
+            <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h1 class="heading"><span>About</span> Us</h1>
+    <div class="row">
+         <div class="image">
+            <img src="C:\Users\yatis\Downloads\wysiwyg-uploads_1558084999999-medical_doctor.jpg" alt="About Image">
+        </div>
+        <div class="content">
+             <h3>We Take Care of Your Healthy Life</h3>
+             <p>Educating patients, visitors, and staff about the importance of indoor air quality and respiratory health is essential for promoting awareness and adherence to recommended guidelines. Providing information on respiratory hygiene, ventilation practices, and environmental controls empowers individuals to take proactive steps to protect their health in healthcare settings.</p>
+             <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
+        </div>
+    </div>
+</section>
+
+<script>
+    let menu = document.querySelector('#menu-btn');
+    let navbar = document.querySelector('.navbar');
+    
+    menu.onclick = () => {
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');   
+    };
+    
+    window.onscroll = () => {
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('active');
+    };
+</script>
+
+</body>
+</html>
